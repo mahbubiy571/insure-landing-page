@@ -1,1 +1,134 @@
+.header {
+    padding-top: 3.4rem;
+    padding-bottom: 3.1rem;
+}
+.header__container {
+    display:flex;
+    justify-content: space-between;
+}
 
+.sitenav__list {
+    display: flex;
+    gap:2.6rem;
+    align-items:center;
+}
+
+.sitenav__link {
+    color:#837D88;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 100%;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+
+    &:hover {
+        color:#2C2830;
+    }
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    padding: 1.3rem 2.85rem 1.2rem 2.85rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 100%;
+    letter-spacing: 1.5px;
+    transition: 0.3;
+}
+
+.btn__header {
+    color:#2C2830;
+    border:1.5px solid #2C2830;
+    background-color:#FFFFFF;
+
+    &:hover {
+        color:#FFFFFF;
+        background-color: #2C2830;
+        border-color: #2C2830;
+    }
+}
+
+.sitenav-link__mobile {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 4rem;
+    letter-spacing: 1.36px;
+    color:#FFFFFF;
+    background-color:#2C2830;
+    border:0;
+    transition: 0.3s;
+
+    &:hover {
+        padding: 9px 90px 7px 90px;
+        border: 1.5px solid #FFFFFF;
+    }
+}
+
+.header__toggle_btn {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.header__hidden {
+    position: absolute;
+    bottom: 180px;  
+    top: 80px;
+    left: 0;
+    background-color:#2C2830;
+    background-image: url("../assets/bg-pattern-mobile-nav.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 4rem;
+    text-align: left;
+    transform: translateX(100%);
+    display: none;
+    ul {
+        flex-direction: column;
+    }
+    
+}
+
+.header__hidden.show {
+    transform: translateX(0%);
+
+   }
+
+
+
+@media screen and (max-width:400px) {
+    .header {
+       padding-top: 0;
+       padding-bottom: 0;
+    }
+    
+    .header__container {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+        display: flex;
+        align-items:center;
+        padding-top: 2.4rem;
+        padding-bottom: 2.4rem;
+    }
+
+    .sitenav {
+       display: none;
+    }
+    
+    .header__toggle_btn {
+        display: grid;
+    }
+
+    .header__hidden {
+        display: grid;
+        flex-direction: column;
+    }
+}
