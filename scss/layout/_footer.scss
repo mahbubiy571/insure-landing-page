@@ -28,6 +28,7 @@
     position: absolute;
     z-index: 1;
     left: 0;
+    pointer-events: none;
 }
 
 .footer__line {
@@ -45,6 +46,15 @@
 .footer__column {
     display: flex;
     flex-direction: column;
+}
+
+.social__link path {
+    transition: 0.3s;
+    position: relative;
+    z-index: 2;
+}
+.social__link:hover path {
+   fill: #2C2830;
 }
 
 .footer__heading {
@@ -70,6 +80,7 @@
         text-decoration: underline;
     }
 }
+
 
 @media screen and (max-width:400px) {
       
