@@ -1,0 +1,32 @@
+.btn {
+    width: 150px;
+    height: 40px;
+    padding: 1.3rem 2.85rem 1.2rem 2.85rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 100%;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+}
+
+.btn__header {
+    color:#2C2830;
+    border:1.5px solid #2C2830;
+    background-color:#FFFFFF;
+
+    &:hover {
+        color:#FFFFFF;
+        background-color: #2C2830;
+        border-color: #2C2830;
+    }
+}
+
+.btn__primary {
+    border: 1.5px solid  #FFFFFF;
+    color:#FFFFFF;
+    margin-bottom: 12.7rem;
+    &:hover {
+        background-color:#FFFFFF;
+        color:#2C2830;
+    }
+}

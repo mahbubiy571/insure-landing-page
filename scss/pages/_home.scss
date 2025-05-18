@@ -1,0 +1,156 @@
+.hero__mobile {
+    display: none;
+}
+
+.hero {
+    background-color:#2D2641;
+    width: 100%;
+    max-width: 1710px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero__container {
+   display: flex;
+   gap: 4rem;
+}
+
+.hero__content {
+    margin-top: 10.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__line {
+    border: 1px solid #FFFFFF;
+    width: 15rem;
+    margin-bottom: 6.3rem;
+}
+
+.hero__title {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: "DM Serif Display";
+    font-size: 7.2rem;
+    line-height: 6.4rem;
+    letter-spacing: -1px;
+    width: 52rem;
+}
+
+.hero__descraption {
+    width: 54rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color:#FFFFFF;
+    margin-bottom: 2.5rem;
+}
+
+.image-family {
+    position: absolute;
+    margin-top: 10.5rem;
+}
+
+.top-right-decoration {
+  position: absolute;
+  top: 11rem;
+  right: 0;
+  z-index: 1;
+}
+
+.bottom-decoration {
+    position: absolute;
+    left:0;
+    bottom:-30rem;
+    z-index: 1;
+}
+
+@media screen and (max-width:400px) {
+   .hero {
+    display: none;
+   }
+    
+   .hero__mobile {
+    display: block;
+   }
+
+   .image-family__mobile {
+    max-width: 400px;
+    width: 100%;
+    max-height: 455px;
+    height: 100%;
+  }
+
+
+   .hero-mobile__container {
+    background-color:#2D2641;
+    margin-top: -3px;
+    height: 500px;
+   }
+  
+   .hero-content__mobile {
+    display:flex;
+    flex-direction: column;
+   }
+
+   .hero-mobile__title {
+     font-family: "DM Serif Display";
+     font-weight: 400;
+     font-size: 4.8rem;
+     line-height: 4.8rem;
+     letter-spacing:-0.67px;
+     color:#FFFFFF;
+     max-width: 327px;
+     width: 100%;
+     text-align: center;
+     margin-bottom: 1.6rem;
+   }
+
+   .hero-mobile__descraption {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color:#FFFFFF;
+    text-align: center;
+    max-width: 327px;
+    width: 100%;
+    margin-bottom: 3.2rem;
+   }
+
+   .mobile-btn {
+    width: 150px;
+    height: 40px;
+    border: 1.5px solid #FFFFFF;
+    padding: 1.2rem 2.8rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 100%;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+   }
+
+   .mobile-btn__primary {
+    margin-left: auto;
+    margin-right: auto;
+    color:#FFFFFF;
+
+    &:hover {
+        color:#2C2830;
+        background-color:#FFFFFF;
+       
+    }
+   }
+
+    .mobile-top-decoration {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+    }
+
+   .mobile-bottom-decoration {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom:-50rem;
+   }
+}
