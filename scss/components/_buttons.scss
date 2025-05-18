@@ -30,3 +30,26 @@
         color:#2C2830;
     }
 }
+
+
+.cta__btn {
+    width: 164px;
+    height: 40px;
+    border:1.5px solid #FFFFFF;
+    padding: 1.25rem 2.8rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 100%;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.btn-outline-light {
+   color: #FFFFFF;
+
+    &:hover {
+        color: #2C2830;
+        background-color:#FFFFFF;
+    }
+}
